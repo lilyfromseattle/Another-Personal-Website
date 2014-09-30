@@ -1,0 +1,49 @@
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/main.css">
+  <script language="javascript" type="text/javascript" src="jquery-1.8.3.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+</head>
+
+<body>
+  <nav>
+  <ul class = "navbar">
+    <li class="links"><a href="/">Home</a></li>
+    <li class="links"><a href="#allaboutme">About</a></li>
+    <li class="links"><a href="/posts">Blog</a></li>
+    <li class="links"><a href="#contactme">Contact</a></li>
+  </ul>
+</nav>
+  <!-- <header>
+    <a id="logo"></a>
+        <a href="#" id="menu-icon"></a>
+        <h1 id = "name">Lily Pace</h1>
+        <h2 id = "tagline">Art. Design. Code.</h2>
+  </header> -->
+  <!-- <hr> -->
+    <div id="content">
+
+      <%=yield %>
+
+    </div>
+  <!-- <hr> -->
+</body>
+</html>
+
+<script src="/javascript/javascript.js">
+$(document).click(function() {
+    // Adding the conditional will only fire when the element has the class available
+    if( $('.nav.active').hasClass("active") ) {
+      $('.nav.active').removeClass("active");
+      // console.log('Triggered');
+    }
+});
+
+$(".nav").click(function(event) {
+    $(this).toggleClass("active");
+    event.stopPropagation();
+});
+</script>
