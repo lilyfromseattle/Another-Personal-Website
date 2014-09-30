@@ -190,10 +190,8 @@ nav ul a:hover {
     float:none;
     align: center;
     top:50%;
-    left:48%;
+    left: 50%;
     margin:-100px 0 0 -150px;
-    /*width: 90%;
-    height: 90%;*/
     width: 250px;
     height: 250px;
     border-radius: 11em;
