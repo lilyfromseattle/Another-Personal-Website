@@ -166,7 +166,7 @@ nav ul a:hover {
     margin-bottom: 0;
     text-align: center;
     float :none;
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   #tag {
@@ -194,8 +194,6 @@ nav ul a:hover {
     margin:-100px 0 0 -150px;
     /*width: 90%;
     height: 90%;*/
-    width: 200px;
-    height: 200px;
 
 
   }
