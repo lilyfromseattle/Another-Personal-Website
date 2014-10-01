@@ -292,13 +292,13 @@ nav ul a:hover {
     -moz-duration: 1s;
   }
 
-  #mobile:hover #mobilenav {
+  /*#mobile:hover #mobilenav {
     left: 0;
     transition-duration: 1s;
     -webkit-duration: 1s;
     -moz-duration: 1s;
 
-  }
+  }*/
 
   #mobilenav a:hover {
     color: #FC3F3F;
