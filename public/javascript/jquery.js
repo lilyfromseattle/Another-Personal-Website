@@ -12,16 +12,16 @@ $(document).ready(function() {
     $("#mobilenav").css("left", "-150")
   });
 
-  $(".fulltext").click(function () {
-    $(this).siblings(".posttext").slideToggle(600);
-    // $(this).children(".readpost").replaceWith("Hide Full Post").toggle();
-      if ($(this).siblings(".posttext").is(":visible")) {
-        $(this).children(".readpost").replaceWith("Show Full Post");
-      };
-      else {
-        $(this).children(".readpost").replaceWith("Hide Full Post");
-      };
-  });
+  // $(".fulltext").click(function () {
+  //   $(this).siblings(".posttext").slideToggle(600);
+  //   // $(this).children(".readpost").replaceWith("Hide Full Post").toggle();
+  //     if ($(this).siblings(".posttext").is(":visible")) {
+  //       $(this).children(".readpost").replaceWith("Show Full Post");
+  //     };
+  //     else {
+  //       $(this).children(".readpost").replaceWith("Hide Full Post");
+  //     };
+  // });
 
 
   //  $(".posttext").hide();

@@ -18,9 +18,12 @@ header {
   /*position: relative;*/
   height: 56%;
   z-index: -1;
-  background-color: rgba(252,63,63,.7)
+  background-color: rgba(227,189,127,.6)
 }
-
+/*RED - rgba(252,63,63,.7)*/
+/*BLUE - rgba(88,174,224,.7)*/
+/*GREEN - background-color: rgba(155,194,72,.6)*/
+/*BEIGE - rgba(227,189,127,.6) -- #E3BD7F*/
 nav {
   top: 0;
   left: 0;
@@ -45,6 +48,7 @@ nav ul a {
   transition-duration: 1s;
   -webkit-duration: 1s;
   -moz-duration: 1s;
+  font-size: 1.5em;
 }
 
 nav ul a:hover {
@@ -129,12 +133,14 @@ nav ul a:hover {
   padding-top: .5%;*/
 }
 
-#aboutme {
+.headers {
   display :block;
   text-align: center;
   /*margin-right: 140;*/
   font-size: 3.5em;
   padding: 0;
+    /*-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(50%, rgba(199,166,113,.5)), to(rgba(0,0,0,1)));*/
+
 }
 
 .bio {
@@ -175,6 +181,8 @@ nav ul a:hover {
 #contactdiv {
   padding-left: 13%;
   padding-right: 12%;
+  /*padding-top: .7%;*/
+  padding-bottom: 1%;
 
 }
 
@@ -182,6 +190,7 @@ nav ul a:hover {
   text-align :center;
   font-size: 3em;
   color: white;
+
 }
 
 .squarepic {
@@ -247,9 +256,9 @@ nav ul a:hover {
   z-index: -5;
   /*position: relative;*/
   left: 0;
-  padding: 2%;
-  padding-top: .5%;
-  background-color: rgba(252,63,63,.7);
+  padding: .5%;
+  /*padding-top: .5%;*/
+  background-color: rgba(227,189,127,.6);
   text-shadow: 1px 1px 2px white;
 }
 
@@ -258,8 +267,8 @@ nav ul a:hover {
   z-index: -5;
   /*position: relative;*/
   left: 0;
-  padding: 2%;
-  padding-top: .5%;
+  padding: 1%;
+  /*padding-top: .5%;*/
   background-color: rgba(252,252,252,.7);
   text-shadow: 1px 1px 2px white;
 }
@@ -289,6 +298,15 @@ nav ul a:hover {
 #mainfulltext {
   /*font-size: .7em;*/
   margin-bottom: 5%;
+  background: none;
+}
+
+#mainfulltext:hover {
+  background-color: rgba(0,0,0,.7);
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
+
 }
 
 .mainblogdiv {
@@ -307,27 +325,34 @@ nav ul a:hover {
 .fulltext {
   margin: 20px;
   text-align: center;
-  /*background-color: rgba(107,107,107,.7);*/
-  background: black;
-  width: 20%;
+  background-color: rgba(0,0,0,.5);
+  /*background: black;*/
+  width: 100px;
   margin-left: auto;
   margin-right: auto;
   padding: .75%;
   font-size: 1.25em;
   border-radius: 1.25em;
-  /*drop-shadow: 2px 2px 2px black;*/
+  box-shadow: 2px 2px 2px black, -2px -2px 2px black;
   color: white;
-  box-shadow: 2px 2px 4px white, -2px -2px 4px white;
+  /*box-shadow: 2px 2px 4px white, -2px -2px 4px white;*/
+  transition-duration: 1s;
+  -webkit-duration: 1s;
+  -moz-duration: 1s;
+  text-shadow: 2px 2px 2px black;
+  border: 2px solid white;
+}
+
+.fulltext:hover {
+  background-color: rgba(0,0,0,.7);
   transition-duration: 1s;
   -webkit-duration: 1s;
   -moz-duration: 1s;
 }
 
-.fulltext:hover {
-  color: grey;
-  transition-duration: 1s;
-  -webkit-duration: 1s;
-  -moz-duration: 1s;
+#entriesbydate {
+  margin-top: 0;
+  margin-bottom :2%;
 }
 
 #menu-icon {
@@ -408,7 +433,7 @@ nav ul a:hover {
   }
 
   #menu-icon:hover {
-    background: #FC3F3F url('../images/menu-icon.png') center;
+    background: #E3BD7F url('../images/menu-icon.png') center;
     background-size: 85%;
     transition-duration: 1s;
     -webkit-duration: 1s;
@@ -424,7 +449,7 @@ nav ul a:hover {
   }*/
 
   #mobilenav a:hover {
-    color: #FC3F3F;
+    color: #E3BD7F;
     transition-duration: 1s;
     -webkit-duration: 1s;
     -moz-duration: 1s;

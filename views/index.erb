@@ -19,7 +19,7 @@
     <!-- <div class="bio"> -->
     <!-- <h1 id="aboutme">About Me</h1> -->
     <!-- <div class="squarepic" id="about"></div> -->
-    <h1 id="aboutme">About Me</h1>
+    <h1 class ="headers">About Me</h1>
     <!-- <div class="bio"> -->
     <div class="bio">
     <p>   My name is Lily and I'm a student at the Ada Developer's Academy. Welcome to my website! I'm a Seattle native currently plunging headfirst into web design and code. I have a degree in Sociology from the University of Washington with a minor in Philosophy. I have a background in fine art and design of all kinds.
@@ -40,7 +40,7 @@
 <h1 class="title">Contact Me</h1> -->
 <div class="textdiv" id= "contactdiv">
   <A NAME="contactme">
-  <h1 class="title">Contact Me</h1>
+  <h1 class ="headers">Contact Me</h1>
   <!-- <div id = "contactlinks"> -->
     <a href="http://www.facebook.com/lilard"><img class = "contactimage" src="/images/facebook.png"></a>
     <a href="http://www.twitter.com/lilyfromseattle"><img class = "contactimage" src="/images/twitter.png"></a>
@@ -54,7 +54,7 @@
 <!-- <div class = "textdiv" id="recentpostsdiv"> -->
 <div id ="blogpostdiv">
   <div class="mainblogdiv" id= "maintitlediv">
-  <h1 class="title">Blog Entries by Date<h1>
+  <h1 class="title" id= "entriesbydate">Latest Blog Entries<h1>
   </div>
   <% @posts.each do |post| %>
       <div>
@@ -62,7 +62,7 @@
          <div class="posttitle" id="maintitle"><%= post.written_title %></div>
          <div class="posttext" id="maintext"><%= post.text %></div>
          <div class="mainblogdiv">
-           <div class ="fulltext" id="mainfulltext"><a class = "readpost">Read Full Post</a></div>
+           <div class ="fulltext" id="mainfulltext"><a class = "readpost">Full Post</a></div>
          </div>
       </div>
   <% end %>
