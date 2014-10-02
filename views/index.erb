@@ -38,15 +38,37 @@
 <!-- CONTACT -->
 <!--
 <h1 class="title">Contact Me</h1> -->
-<div class="textdiv">
+<div class="textdiv" id= "contactdiv">
   <A NAME="contactme">
   <h1 class="title">Contact Me</h1>
+  <!-- <div id = "contactlinks"> -->
     <a href="http://www.facebook.com/lilard"><img class = "contactimage" src="/images/facebook.png"></a>
     <a href="http://www.twitter.com/lilyfromseattle"><img class = "contactimage" src="/images/twitter.png"></a>
     <a href="http://www.linkedin.com/pub/dir/Lily/Pace"><img class = "contactimage" src="/images/linkedin.png"></a>
     <a href="http://www.instagram.com/lilyfromseattle"><img class = "contactimage" src="/images/instagram.png"></a>
     <a href="http://www.github.com/lilyfromseattle"><img class = "contactimage" src="/images/github.png"></a>
     <a href="mailto:lilyfpace@gmail.com"><img class = "contactimage" src="/images/gmail.png"></a>
+  <!-- </div> -->
 </div>
 
+<!-- <div class = "textdiv" id="recentpostsdiv"> -->
+<div id ="blogpostdiv">
+  <div class="mainblogdiv" id= "maintitlediv">
+  <h1 class="title">Blog Entries by Date<h1>
+  </div>
+  <% @posts.each do |post| %>
+      <div>
+         <div class="postdate" id="maindate"><%= post.written_date %></div>
+         <div class="posttitle" id="maintitle"><%= post.written_title %></div>
+         <div class="posttext" id="maintext"><%= post.text %></div>
+         <div class="mainblogdiv">
+           <div class ="fulltext" id="mainfulltext"><a class = "readpost">Read Full Post</a></div>
+         </div>
+      </div>
+  <% end %>
+</div>
+<!-- </div> -->
+
+<div class="textdiv" id = "bymediv">
 <p id="byme">This website was created by Lily Pace using HTML, CSS, Ruby, and Sinatra.</p>
+</div>
