@@ -32,7 +32,7 @@ nav {
   position: fixed;
   background: black;
   width: 100%;
-  margin-right: 5%;
+  /*margin-right: 5%;*/
   z-index: 201;
 }
 
@@ -194,22 +194,23 @@ nav ul a:hover {
 }
 
 .squarepic {
-  margin-left: auto;
-  margin-right:auto;
+  margin: 0;
+  /*margin-left: auto;
+  margin-right:auto;*/
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 #about {
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  /*box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
   background: url('../images/falls3.jpg') ;
   background-size: 100%;
   width: 100%;
   /*height: 20em;*/
-  height: 55%;
+  height: 53%;
   margin-bottom: 5%;
 }
 
@@ -310,8 +311,8 @@ nav ul a:hover {
 }
 
 .mainblogdiv {
+  padding: 0;
   margin-left: 0;
-  /*margin-top: 90px;*/
   z-index: -5;
   background-color:rgba(0,0,0,0.6);
   padding-top: 1%;
@@ -321,7 +322,10 @@ nav ul a:hover {
 #maintitlediv {
   margin-top: 90px;
 }
-
+/*
+.container {
+  padding: 0;
+}*/
 .fulltext {
   margin: 20px;
   text-align: center;
@@ -420,6 +424,11 @@ nav ul a:hover {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
+
+  #about {
+    height: 38%;
+  }
+
   #mobilenav {
     display: block;
   }
@@ -522,5 +531,9 @@ nav ul a:hover {
 
   #tag {
     font-size: 2em;
+  }
+
+  #about {
+    height: 26%;
   }
 }
