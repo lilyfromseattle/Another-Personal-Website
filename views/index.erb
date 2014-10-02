@@ -48,7 +48,7 @@
     <a href="http://www.instagram.com/lilyfromseattle"><img class = "contactimage" src="/images/instagram.png"></a>
     <a href="http://www.github.com/lilyfromseattle"><img class = "contactimage" src="/images/github.png"></a>
     <a href="mailto:lilyfpace@gmail.com"><img class = "contactimage" src="/images/gmail.png"></a>
-
+  <!-- </div> -->
 </div>
 
 <!-- <div class = "textdiv" id="recentpostsdiv"> -->
@@ -56,17 +56,17 @@
   <div class="mainblogdiv" id= "maintitlediv">
   <h1 class="title" id= "entriesbydate">Latest Blog Entries<h1>
   </div>
-  <% @posts.each do |post| %>
-        <div>
-           <div class="postdate" id="maindate"><%= post.written_date %></div>
-           <div class="posttitle" id="maintitle"><%= post.written_title %></div>
-           <div class="posttext" id="maintext"><%= post.text %></div>
-           <div class="mainblogdiv">
-           <div class ="fulltext" id="mainfulltext">
-             <a class = "readpost">Full Post</a></div>
-           </div>
-         </div>
-  <% end %>
+<% @posts.each do |post| %>
+     <!-- <li class ="links" ><a class="posttitle" href= "<%= post.url %>"><%= post.title %></a></li>
+     <li class ="links"><a class="postdate" href= "<%= post.url %>"><%= post.date %></a></li> -->
+  <div>
+     <div class="postdate"><%= post.written_date %></div>
+     <div class="posttitle"><%= post.written_title %></div>
+     <div class="posttext"><%= post.text %></div>
+     <div class ="fulltext"><a class = "readpost">. . .</a></div>
+  </div>
+
+<% end %>
 <!-- </div> -->
 <!-- </div> -->
 

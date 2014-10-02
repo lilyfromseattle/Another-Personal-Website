@@ -327,28 +327,43 @@ nav ul a:hover {
   padding: 0;
 }*/
 .fulltext {
-  margin: 20px;
+  margin: 0;
+  margin-bottom: 2%;
   text-align: center;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.6);
   /*background: black;*/
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  /*width: 50px;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*padding-top: -1;*/
   padding: .75%;
   font-size: 1.25em;
-  border-radius: 1.25em;
-  box-shadow: 2px 2px 2px black, -2px -2px 2px black;
+  /*border-radius: 1.25em;*/
+  /*box-shadow: 2px 2px 2px black, -2px -2px 2px black;*/
   color: white;
   /*box-shadow: 2px 2px 4px white, -2px -2px 4px white;*/
   transition-duration: 1s;
   -webkit-duration: 1s;
   -moz-duration: 1s;
   text-shadow: 2px 2px 2px black;
-  border: 2px solid white;
+  /*border: 2px solid white;*/
+}
+
+#lilyatada {
+  margin-top: 63px;
+  padding: 2%;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+}
+
+span {
+  color: #FC3F3F;
+  text-shadow: none;
 }
 
 .fulltext:hover {
-  background-color: rgba(0,0,0,.7);
+  /*background-color: rgba(0,0,0,.7);*/
   transition-duration: 1s;
   -webkit-duration: 1s;
   -moz-duration: 1s;

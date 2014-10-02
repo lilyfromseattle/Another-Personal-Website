@@ -1,7 +1,7 @@
 <!--
 <a href="url">Title</a> -->
-<h1 class = "blogpage">Blog Entries by Date</h1>
-<div id ="blogdiv">
+<div class="textdiv" id="lilyatada"><h1 class = "blogpage">Lily <span>@</span> Ada</h1></div>
+<!-- <div id ="blogdiv"> -->
 <% @posts.each do |post| %>
      <!-- <li class ="links" ><a class="posttitle" href= "<%= post.url %>"><%= post.title %></a></li>
      <li class ="links"><a class="postdate" href= "<%= post.url %>"><%= post.date %></a></li> -->
@@ -9,8 +9,8 @@
      <div class="postdate"><%= post.written_date %></div>
      <div class="posttitle"><%= post.written_title %></div>
      <div class="posttext"><%= post.text %></div>
-     <div class ="fulltext"><a class = "readpost">Full Post</a></div>
+     <div class ="fulltext"><a class = "readpost">. . .</a></div>
   </div>
 
 <% end %>
-</div>
+<!-- </div> -->
